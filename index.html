@@ -308,7 +308,9 @@ const adBreak =  function(o) {adsbygoogle.push(o);}
 })();
 </script>
 
-
+<input #inputtedNumber class="transactionInput" placeholder="{{numberPlaceholder | translate }}"/>
+        <div class="error-msg1" *ngIf="displayErrors" style="margin-left:90px;" name="errorMsg">
+           {{transactionResponse._errorDetails._message}} </div>
 
 
 </body>
